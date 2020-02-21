@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#15daa3</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDanger">#D92C59</color>
+    <color name="colorDarkGrey">#666666</color>
+    <color name="colorGreen">#21ce99</color>
+    <color name="colorGreenDark">#15daa3</color>
+    <color name="colorLightGrey">#D8D8D8</color>
+    <color name="colorPrimary">#21ce99</color>
+    <color name="colorPrimaryDark">#15daa3</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <string name="app_name">MyLibrary</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@color/colorDarkGrey</item>
+        <item name="android:fontFamily">@font/akkurat_bold</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+        <!--dialog title-->
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+    </style>
+    <style name="TitleDialogTextStyle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+</resources>

@@ -3,8 +3,6 @@ package com.example.cotterexample;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,13 +14,6 @@ import com.cotter.app.ScreenNames;
 import com.cotter.app.Strings;
 
 public class MainActivity extends AppCompatActivity {
-
-
-    private EditText apiKeyID;
-    private EditText apiSecretKey;
-    private EditText userID;
-
-    private LinearLayout buttons;
 
     private TextView res;
     private TextView bioDefault;
@@ -37,18 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void initCotter(View v) {
 
-        apiKeyID = findViewById(R.id.api_key_id);
-        apiSecretKey = findViewById(R.id.api_secret_key);
-        userID = findViewById(R.id.user_id);
-
-//        Cotter.init(this.getApplicationContext(), "http://10.0.2.2:1234/api/v0",userID.getText().toString(), apiKeyID.getText().toString(),
-//                apiSecretKey.getText().toString());
-
-        Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0",userID.getText().toString(), apiKeyID.getText().toString(),
-                apiSecretKey.getText().toString());
+        Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0", getString(R.string.user_id), getString(R.string.api_key_id), getString(R.string.api_secret_key));
+//        Cotter.init(this.getApplicationContext(), "http://10.0.2.2:1234/api/v0", getString(R.string.user_id), getString(R.string.api_key_id_test), getString(R.string.api_secret_key_test));
 
         // Setting strings for Headers
         Cotter.strings.setHeaders(ScreenNames.PinEnrollmentEnterPin, "Aktivasi PIN");
@@ -102,10 +84,6 @@ public class MainActivity extends AppCompatActivity {
         Cotter.colors.setColorAccent("#53228B");
         Cotter.colors.setColorDanger("#B00020");
 
-
-        buttons = findViewById(R.id.buttons);
-        buttons.setVisibility(View.VISIBLE);
-
         // setting text views
         res = findViewById(R.id.result);
         bioDefault = findViewById(R.id.bio_default);
@@ -150,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openDashboard(View view) {
-        Intent in = new Intent(this, Dashboard.class);
+    public void openLogin(View view) {
+        Intent in = new Intent(this, Login.class);
         startActivity(in);
     }
 

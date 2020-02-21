@@ -1,0 +1,93 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:1-27:12
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:6:22-63
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:8:5-74
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:8:22-71
+uses-feature#android.hardware.fingerprint
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:10:5-12:36
+	android:required
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:11:9-52
+application
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:14:5-25:19
+	android:supportsRtl
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:16:9-41
+	android:allowBackup
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:18:9-40
+activity#com.cotter.app.PinChangeVerifyPinActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:19:9-73
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:19:19-61
+activity#com.cotter.app.PinEnrollmentSuccessActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:20:9-66
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:20:19-63
+activity#com.cotter.app.PinVerificationActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:21:9-61
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:21:19-58
+activity#com.cotter.app.PinEnrollmentReEnterPinActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:22:9-69
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:22:19-66
+activity#com.cotter.app.PinEnrollmentEnterPinActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:23:9-67
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:23:19-64
+activity#com.cotter.app.MainActivity
+ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:24:9-50
+	android:name
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml:24:19-47
+uses-sdk
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		ADDED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
+		INJECTED from /Users/putri/Cotter/CotterExample/cotter/src/main/AndroidManifest.xml
