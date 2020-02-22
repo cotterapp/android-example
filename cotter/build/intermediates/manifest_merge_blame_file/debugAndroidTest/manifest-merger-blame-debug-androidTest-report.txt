@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cotter.app.test" >
+4
+5    <uses-sdk
+5-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:5:15-41
+7        android:targetSdkVersion="17" />
+7-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:11:5-15:69
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:11:22-76
+11        android:functionalTest="false"
+11-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:13:22-53
+13        android:label="Tests for com.cotter.app.test"
+13-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:15:22-67
+14        android:targetPackage="com.cotter.app.test" />
+14-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:12:22-65
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+16-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-64
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-66
+17-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-63
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+18-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+19-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-74
+19-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-71
+20
+21    <uses-feature
+21-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-18:36
+22        android:name="android.hardware.fingerprint"
+22-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-52
+23        android:required="false" />
+23-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-33
+24
+25    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+25-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:24:5-72
+25-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:24:22-69
+26    <uses-permission android:name="android.permission.REORDER_TASKS" />
+26-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:24:5-72
+26-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:24:22-69
+27
+28    <application
+28-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:7:5-9:19
+29        android:allowBackup="true"
+29-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.1.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/e9dab9c67c1ee3668e0bbf86c6d8cbd8/core-1.1.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+31-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:7:18-43
+32        android:label="@string/app_name"
+32-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-41
+33        android:supportsRtl="true"
+33-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-35
+34        android:theme="@style/AppTheme" >
+34-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-40
+35        <uses-library android:name="android.test.runner" />
+35-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:8:9-60
+35-->/Users/putri/Cotter/CotterExample/cotter/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger1304850259556083979.xml:8:23-57
+36
+37        <activity android:name="com.cotter.app.PinChangeVerifyPinActivity" />
+37-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-78
+37-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:19-75
+38        <activity android:name="com.cotter.app.PinEnrollmentSuccessActivity" />
+38-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-80
+38-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:19-77
+39        <activity android:name="com.cotter.app.PinVerificationActivity" />
+39-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-75
+39-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-72
+40        <activity android:name="com.cotter.app.PinEnrollmentReEnterPinActivity" />
+40-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:9-83
+40-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:19-80
+41        <activity android:name="com.cotter.app.PinEnrollmentEnterPinActivity" />
+41-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-81
+41-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:19-78
+42        <activity android:name="com.cotter.app.MainActivity" />
+42-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-64
+42-->[__tested_artifact__::cotter] /Users/putri/Cotter/CotterExample/cotter/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:19-61
+43        <activity
+43-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:28:9-31:67
+44            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
+44-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:29:13-78
+45            android:exported="true"
+45-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:30:13-36
+46            android:theme="@style/DeviceCredentialHandlerTheme" />
+46-->[androidx.biometric:biometric:1.0.1] /Users/putri/.gradle/caches/transforms-2/files-2.1/21e42bf4db5ba5c0423426f7f37d6a1e/biometric-1.0.1/AndroidManifest.xml:31:13-64
+47        <activity
+47-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:27:9-33:20
+48            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+48-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:28:13-99
+49            android:theme="@android:style/Theme" >
+49-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:29:13-49
+50            <intent-filter>
+50-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:30:13-32:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:17-69
+51-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:25-66
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:34:9-40:20
+55            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+55-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:35:13-95
+56            android:theme="@android:style/Theme" >
+56-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:36:13-49
+57            <intent-filter>
+57-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:30:13-32:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:17-69
+58-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:25-66
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:41:9-47:20
+62            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+62-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:42:13-103
+63            android:theme="@android:style/Theme.Dialog" >
+63-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:43:13-56
+64            <intent-filter>
+64-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:30:13-32:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:17-69
+65-->[androidx.test:core:1.2.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/b84e39374531a9cc1088cbb1e2cc9cc2/core-1.2.0/AndroidManifest.xml:31:25-66
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->[com.google.android.gms:play-services-base:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+69-->[com.google.android.gms:play-services-base:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-base:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-base:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/77c2fc448e2bd0738fd67dce062b1efd/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/f37f169b72429a423489898f22e94d7b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/f37f169b72429a423489898f22e94d7b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->[com.google.android.gms:play-services-basement:17.0.0] /Users/putri/.gradle/caches/transforms-2/files-2.1/f37f169b72429a423489898f22e94d7b/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+76    </application>
+77
+78</manifest>
