@@ -15,6 +15,8 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         String resp = IdentityManager.handleResponse(getIntent());
-        Log.i("Login Response: ", resp);
+        if (resp != null) {
+            Log.i("Login Response: ", resp);
+        }
     }
 }
