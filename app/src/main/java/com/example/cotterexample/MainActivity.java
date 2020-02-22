@@ -44,11 +44,23 @@ public class MainActivity extends AppCompatActivity {
         apiSecretKey = findViewById(R.id.api_secret_key);
         userID = findViewById(R.id.user_id);
 
-//        Cotter.init(this.getApplicationContext(), "http://10.0.2.2:1234/api/v0",userID.getText().toString(), apiKeyID.getText().toString(),
-//                apiSecretKey.getText().toString());
-
         Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0",userID.getText().toString(), apiKeyID.getText().toString(),
                 apiSecretKey.getText().toString());
+
+        // If you want to use api keys in a file:
+        // Add an apiKeys.xml inside your /res directory
+        // and add the following:
+        //
+        //<?xml version="1.0" encoding="utf-8"?>
+        //<resources>
+        //    <string name="user_id">User ID</string>
+        //    <string name="api_key_id">Api Key ID</string>
+        //    <string name="api_secret_key">Api Secret Key</string>
+        //</resources>
+        //
+        // Then, uncomment the line below
+        //
+        // Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0", getString(R.string.user_id), getString(R.string.api_key_id), getString(R.string.api_secret_key));
 
         // Setting strings for Headers
         Cotter.strings.setHeaders(ScreenNames.PinEnrollmentEnterPin, "Aktivasi PIN");
