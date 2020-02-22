@@ -24,9 +24,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login Without Input"
-            android:id="@+id/login"
-            android:onClick="login"
+            android:text="Login Email"
+            android:id="@+id/loginEmail"
+            android:onClick="loginEmail"
             android:layout_marginBottom="40dp"
             />
 
@@ -45,8 +45,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login with Email"
-            android:id="@+id/loginWithInput"
-            android:onClick="loginWithInput"
+            android:id="@+id/loginEmailWithInput"
+            android:onClick="loginEmailWithInput"
+            android:layout_marginBottom="40dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Phone"
+            android:id="@+id/loginPhone"
+            android:onClick="loginPhone"
+            android:layout_marginBottom="40dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+19254510637"
+            android:id="@+id/inputPhone"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Phone"
+            android:id="@+id/loginPhoneWithInput"
+            android:onClick="loginPhoneWithInput"
+            android:layout_marginBottom="40dp"
             />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
