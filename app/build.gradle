@@ -44,5 +44,5 @@ dependencies {
 //
 //    implementation project(':Cotter')
 
-    implementation 'com.github.cotterapp:android-sdk:0.2.0'
+    implementation 'com.github.cotterapp:android-sdk:0.2.1'
 }

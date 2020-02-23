@@ -22,6 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <!--    Register URL Scheme for IdentityRequest redirect url    -->
+        <activity android:name="com.cotter.app.RedirectUriReceiverActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.example.cotterexample" android:host="auth_callback"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -17,17 +17,17 @@ public class Login extends AppCompatActivity {
     }
 
     public void loginEmail(View view) {
-        Cotter.newIdentity(this).login("EMAIL", this, Dashboard.class);
+        Cotter.newIdentity(this, "com.example.cotterexample://auth_callback").login("EMAIL", this, Dashboard.class);
     }
     public void loginEmailWithInput(View view) {
         EditText input = findViewById(R.id.input);
-        Cotter.newIdentity(this).loginWithInput("EMAIL", input.getText().toString(), this, Dashboard.class);
+        Cotter.newIdentity(this, "com.example.cotterexample://auth_callback").loginWithInput("EMAIL", input.getText().toString(), this, Dashboard.class);
     }
     public void loginPhone(View view) {
-        Cotter.newIdentity(this).login("PHONE", this, Dashboard.class);
+        Cotter.newIdentity(this, "com.example.cotterexample://auth_callback").login("PHONE", this, Dashboard.class);
     }
     public void loginPhoneWithInput(View view) {
         EditText input = findViewById(R.id.inputPhone);
-        Cotter.newIdentity(this).loginWithInput("PHONE", input.getText().toString(), this, Dashboard.class);
+        Cotter.newIdentity(this, "com.example.cotterexample://auth_callback").loginWithInput("PHONE", input.getText().toString(), this, Dashboard.class);
     }
 }
