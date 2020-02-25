@@ -4,12 +4,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cotter.app.Callback;
 import com.cotter.app.Cotter;
 import com.cotter.app.CotterMethodChecker;
 import com.cotter.app.TrustedDeviceHelper;
+
+import org.json.JSONObject;
 
 public class TrustedDevice extends AppCompatActivity {
 
@@ -24,7 +28,7 @@ public class TrustedDevice extends AppCompatActivity {
         setContentView(R.layout.activity_trusted_device);
 
         EditText thisDev = findViewById(R.id.this_device);
-        thisDev.setText(TrustedDeviceHelper.getPublicKey() + ":" + TrustedDeviceHelper.getAlgorithm());
+        thisDev.setText(TrustedDeviceHelper.getPublicKey(this) + ":" + TrustedDeviceHelper.getAlgorithm(this));
 
         thisDeviceEnrolled = findViewById(R.id.this_device_enrolled);
         anyDeviceEnrolled = findViewById(R.id.any_device_enrolled);
@@ -34,29 +38,69 @@ public class TrustedDevice extends AppCompatActivity {
     }
 
     public void enrollDevice(View v) {
-        TrustedDeviceHelper.enrollDevice(this);
-        updateMethods();
-    }
-    public void authorizeDevice(View v) {
-        TrustedDeviceHelper.authorizeDevice(this, "LOGIN");
-        updateMethods();
+        TrustedDeviceHelper.enrollDevice(this, new Callback() {
+            @Override
+            public void onSuccess(JSONObject result) {
+                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+
+            @Override
+            public void onError(String error) {
+                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+        });
     }
     public void requestAuth(View v) {
-        TrustedDeviceHelper.requestAuthFromNonTrusted(this, "LOGIN");
-        updateMethods();
+        TrustedDeviceHelper.requestAuth(this, "LOGIN", this, Dashboard.class, new Callback() {
+            @Override
+            public void onSuccess(JSONObject result) {
+                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+
+            @Override
+            public void onError(String error) {
+                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+        });
     }
     public void checkNewRequest(View v) {
         TrustedDeviceHelper.getNewEvent(this, this);
         updateMethods();
     }
     public void removeDevice(View v) {
-        TrustedDeviceHelper.removeDevice(this);
-        updateMethods();
+        TrustedDeviceHelper.removeDevice(this, new Callback() {
+            @Override
+            public void onSuccess(JSONObject result) {
+                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+
+            @Override
+            public void onError(String error) {
+                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+        });
     }
     public void enrollOtherDevice(View v) {
         EditText otherDev = findViewById(R.id.other_device);
-        TrustedDeviceHelper.enrollOtherDevice(this, otherDev.getText().toString());
-        updateMethods();
+        TrustedDeviceHelper.enrollOtherDevice(this, otherDev.getText().toString(), new Callback() {
+            @Override
+            public void onSuccess(JSONObject result) {
+                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+
+            @Override
+            public void onError(String error) {
+                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
+                updateMethods();
+            }
+        });
     }
 
 

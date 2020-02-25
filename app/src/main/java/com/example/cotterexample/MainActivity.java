@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
         //
         // Then, uncomment the line below
         //
-//         Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0",
-//                 getString(R.string.user_id),
-//                 getString(R.string.api_key_id),
-//                 getString(R.string.api_secret_key));
+         Cotter.init(this.getApplicationContext(), "https://www.cotter.app/api/v0",
+                 getString(R.string.user_id),
+                 getString(R.string.api_key_id),
+                 getString(R.string.api_secret_key));
 
         // For local development
-         Cotter.init(this.getApplicationContext(), "http://10.0.2.2:1234/api/v0",
-         getString(R.string.user_id), getString(R.string.api_key_id_test),
-         getString(R.string.api_secret_key_test));
+//         Cotter.init(this.getApplicationContext(), "http://10.0.2.2:1234/api/v0",
+//         getString(R.string.user_id), getString(R.string.api_key_id_test),
+//         getString(R.string.api_secret_key_test));
 
         // Setting strings for Headers
         Cotter.strings.setHeaders(ScreenNames.PinEnrollmentEnterPin, "Aktivasi PIN");

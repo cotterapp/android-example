@@ -50,16 +50,10 @@
             android:layout_marginBottom="20dp"
             />
 
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Authorize LOGIN from Trusted Device"
-            android:onClick="authorizeDevice"
-            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Request Auth from NON TRUSTED DEVICE"
+            android:text="Request Authentication"
             android:onClick="requestAuth"
             />
         <Button
