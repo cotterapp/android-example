@@ -84,24 +84,33 @@
             android:text="Trusted Device Default: ??"
             />
 
+
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter new device public key"
             android:layout_marginTop="20dp"
-            />
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/other_device"
+            android:text="Add new device"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enroll Other Device"
-            android:onClick="enrollOtherDevice"
+            android:text="Open Barcode Scanner"
+            android:onClick="openBarcodeScanner"
             />
 
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make this device a Trusted Device"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Barcode Shower"
+            android:onClick="openBarcodeShower"
+            />
 
         </LinearLayout>
     </ScrollView>

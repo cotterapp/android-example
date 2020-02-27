@@ -86,24 +86,6 @@ public class TrustedDevice extends AppCompatActivity {
             }
         });
     }
-    public void enrollOtherDevice(View v) {
-        EditText otherDev = findViewById(R.id.other_device);
-        TrustedDeviceHelper.enrollOtherDevice(this, otherDev.getText().toString(), new Callback() {
-            @Override
-            public void onSuccess(JSONObject result) {
-                Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
-                updateMethods();
-            }
-
-            @Override
-            public void onError(String error) {
-                Toast.makeText(getApplicationContext(), error, Toast.LENGTH_SHORT).show();
-                updateMethods();
-            }
-        });
-    }
-
-
     public void updateMethods() {
         Cotter.methods.trustedDeviceEnrolled(new CotterMethodChecker() {
             @Override
@@ -126,5 +108,12 @@ public class TrustedDevice extends AppCompatActivity {
                 trustedDeviceDefault.setText("TrustedDevice default: " + b);
             }
         });
+    }
+
+    public void openBarcodeScanner(View view) {
+        TrustedDeviceHelper.startEnrollOtherDeviceAsTrusted(this, this);
+    }
+    public void openBarcodeShower(View view) {
+        TrustedDeviceHelper.startEnrollThisDeviceAsTrusted(this, this);
     }
 }

@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         Cotter.strings.setPinEnrollmentSuccessStrings(Strings.Subtitle,
                 "Mulai sekarang kamu bisa login dan konfirmasi transaksi meggunakan PIN");
         Cotter.strings.setPinEnrollmentSuccessStrings(Strings.ButtonText, "Selesai");
-        Cotter.colors.setSuccessImage(R.drawable.check_green);
         // Biometric prompt
         Cotter.strings.setPinEnrollmentSuccessStrings(Strings.BiometricTitle, "Verifikasi");
         Cotter.strings.setPinEnrollmentSuccessStrings(Strings.BiometricSubtitle,
