@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cotter.app.Callback;
 import com.cotter.app.Cotter;
 import com.cotter.app.CotterMethodChecker;
+import com.cotter.app.Strings;
 import com.cotter.app.TrustedDeviceHelper;
 
 import org.json.JSONObject;
@@ -34,6 +35,32 @@ public class TrustedDevice extends AppCompatActivity {
         thisDeviceEnrolled = findViewById(R.id.this_device_enrolled);
         anyDeviceEnrolled = findViewById(R.id.any_device_enrolled);
         trustedDeviceDefault = findViewById(R.id.trusted_device_default);
+
+
+        // Customization
+        Cotter.strings.setApproveRequestStrings(Strings.Title, "ARE you trying to sign in?");
+        Cotter.strings.setApproveRequestStrings(Strings.Subtitle, "SOMEONE is trying to sign in to your account from another device.");
+        Cotter.strings.setApproveRequestStrings(Strings.ButtonYes, "YES");
+        Cotter.strings.setApproveRequestStrings(Strings.ButtonNo, "NO");
+        Cotter.colors.setLogo(R.drawable.logo);
+
+        // RequestAuth
+        Cotter.strings.setRequestAuthStrings(Strings.DialogTitle, "APPROVE this login from your phone");
+        Cotter.strings.setRequestAuthStrings(Strings.DialogSubtitle, "A NOTIFICATION is sent to your trusted device to confirm it's you.");
+        Cotter.strings.setRequestAuthErrorStrings(Strings.DialogTitle, "SOMETHING went wrong");
+        Cotter.strings.setRequestAuthErrorStrings(Strings.DialogSubtitle, "WE'RE UNABLE to confirm that it's you. Please try again.");
+//
+//        // Success Sheet
+        Cotter.strings.setSuccessSheetStrings(Strings.DialogTitle, "SUCCESS Registering New Device");
+        Cotter.strings.setSuccessSheetStrings(Strings.DialogSubtitle, "YOU CAN now use your new device to access your account without approval.");
+        Cotter.strings.setSuccessSheetErrorStrings(Strings.DialogTitle, "UNABLE to Register New Device");
+        Cotter.strings.setSuccessSheetErrorStrings(Strings.DialogSubtitle, "PLEASE try again.");
+//
+//        // QR Code Show
+        Cotter.strings.setQRCodeShowStrings(Strings.Title, "REGISTER this Device");
+        Cotter.strings.setQRCodeShowStrings(Strings.Subtitle, "PLEASE scan this QR Code from a Trusted Device.");
+        Cotter.strings.setQRCodeShowErrorStrings(Strings.Title, "SOMETHING went wrong");
+        Cotter.strings.setQRCodeShowErrorStrings(Strings.Subtitle, "THE REQUEST timed out. Please try again.");
 
         updateMethods();
     }
