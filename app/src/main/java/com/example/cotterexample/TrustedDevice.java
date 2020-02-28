@@ -1,6 +1,7 @@
 package com.example.cotterexample;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class TrustedDevice extends AppCompatActivity {
             @Override
             public void onSuccess(JSONObject result) {
                 Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                Log.e("Trusted enrollDevice", result.toString() );
                 updateMethods();
             }
 
@@ -57,6 +59,7 @@ public class TrustedDevice extends AppCompatActivity {
             @Override
             public void onSuccess(JSONObject result) {
                 Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                Log.e("Trusted requestAuth", result.toString() );
                 updateMethods();
             }
 
@@ -76,6 +79,7 @@ public class TrustedDevice extends AppCompatActivity {
             @Override
             public void onSuccess(JSONObject result) {
                 Toast.makeText(getApplicationContext(), result.toString(), Toast.LENGTH_SHORT).show();
+                Log.e("Trusted removeDevice", result.toString() );
                 updateMethods();
             }
 

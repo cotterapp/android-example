@@ -24,6 +24,7 @@ public class Dashboard extends AppCompatActivity {
         TrustedDeviceResponse trustDevResp = TrustedDeviceHelper.handleResponse(getIntent());
         if (trustDevResp != null) {
             Log.i("TrustedDeviceResponse: ", Integer.toString(trustDevResp.event.ID));
+            Log.i("TrustedDevice String: ", trustDevResp.response);
         }
 
     }
