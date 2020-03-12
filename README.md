@@ -34,7 +34,7 @@ src/main/res/values/apiKeys.xml
 
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="user_id">none</string>
+    <string name="user_id">user-id</string>
     <string name="api_key_id">api-key-id</string>
     <string name="api_secret_key">api-secret-key</string>
 </resources>
