@@ -38,13 +38,13 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // for cotter
-    implementation 'com.android.volley:volley:1.1.0'
-    implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'androidx.biometric:biometric:1.0.1'
-    implementation 'com.android.support:gridlayout-v7:28.0.0'
-    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.0.0'
+//    implementation 'com.android.volley:volley:1.1.0'
+//    implementation 'com.google.code.gson:gson:2.8.6'
+//    implementation 'androidx.biometric:biometric:1.0.1'
+//    implementation 'com.android.support:gridlayout-v7:28.0.0'
+//    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.0.0'
+//
+//    implementation project(':Cotter')
 
-    implementation project(':Cotter')
-
-//    implementation 'com.github.cotterapp:android-sdk:6d9cb8c2df'
+    implementation 'com.github.cotterapp:android-sdk:0.3.2'
 }
