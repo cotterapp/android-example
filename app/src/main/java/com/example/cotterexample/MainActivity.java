@@ -51,10 +51,17 @@ public class MainActivity extends AppCompatActivity {
 //         getString(R.string.user_id), getString(R.string.api_key_id_test),
 //         getString(R.string.api_secret_key_test));
 
+
         // Setting strings for Headers
         Cotter.strings.setHeaders(ScreenNames.PinEnrollmentEnterPin, "Aktivasi PIN");
         Cotter.strings.setHeaders(ScreenNames.PinEnrollmentReEnterPin, "Konfirmasi PIN");
         Cotter.strings.setHeaders(ScreenNames.PinVerification, "Verifikasi");
+        Cotter.strings.setHeaders(ScreenNames.PinChangeVerifyPin, "Ganti PIN");
+        Cotter.strings.setHeaders(ScreenNames.PinChangeEnterPin, "PIN Baru");
+        Cotter.strings.setHeaders(ScreenNames.PinChangeReEnterPin, "Konfirmasi PIN Baru");
+        Cotter.strings.setHeaders(ScreenNames.PinReset, "Reset PIN");
+        Cotter.strings.setHeaders(ScreenNames.PinResetEnterPin, "Aktivasi PIN Baru");
+        Cotter.strings.setHeaders(ScreenNames.PinResetReEnterPin, "Konfirmasi PIN Baru");
 
         // SETTING STRINGS FOR PIN ENROLLMENT
         // Entering Pin for the first time
@@ -89,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
         // SETTING STRINGS FOR PIN VERIFICATION
         // Pin Verification page
         Cotter.strings.setPinVerificationStrings(Strings.Title, "Masukkan PIN");
-        Cotter.strings.setPinVerificationStrings(Strings.ShowPin, "Lihat PIN");
-        Cotter.strings.setPinVerificationStrings(Strings.HidePin, "Sembunyikan");
+        Cotter.strings.setPinVerificationStrings(Strings.ForgotPin, "Lupa PIN");
         Cotter.strings.setPinVerificationStrings(Strings.ErrorInvalid, "PIN tidak sesuai.");
         // Biometric prompt
         Cotter.strings.setPinVerificationStrings(Strings.BiometricTitle, "Verifikasi");
@@ -103,10 +109,51 @@ public class MainActivity extends AppCompatActivity {
         Cotter.strings.setPinVerificationStrings(Strings.DialogPositiveButton, "Input PIN");
         Cotter.strings.setPinVerificationStrings(Strings.DialogNegativeButton, "Coba lagi");
 
+
+
+        // SETTING STRINGS FOR PIN RESET
+        // Start pin reset
+        Cotter.strings.setPinReset(Strings.Title, "Kode Keamanan");
+        Cotter.strings.setPinReset(Strings.Subtitle, "Kami telah mengirimkan kode ke");
+        Cotter.strings.setPinReset(Strings.ResendCode, "Kirim ulang email");
+        Cotter.strings.setPinReset(Strings.ErrorInvalid, "Kode yang kamu masukkan salah");
+
+
+        // Entering New Pin
+        Cotter.strings.setPinResetEnterPin(Strings.Title, "Buat PIN untuk keamanan akunmu");
+        Cotter.strings.setPinResetEnterPin(Strings.ShowPin, "Lihat PIN");
+        Cotter.strings.setPinResetEnterPin(Strings.HidePin, "Sembunyikan");
+        Cotter.strings.setPinResetEnterPin(Strings.ErrorCombination,
+                "PIN terlalu mudah. Yuk buat PIN baru dengan kombinasi yang lebih sulit.");
+        // Alert dialog when pressed "X"
+        Cotter.strings.setPinResetEnterPin(Strings.DialogTitle, "Yakin Tidak Mau Buat PIN Baru Sekarang?");
+        Cotter.strings.setPinResetEnterPin(Strings.DialogSubtitle,
+                "Kamu bisa menggunakan PIN lama kalau tidak mau membuat PIN baru sekarang.");
+        Cotter.strings.setPinResetEnterPin(Strings.DialogPositiveButton, "Input PIN");
+        Cotter.strings.setPinResetEnterPin(Strings.DialogNegativeButton, "Lain Kali");
+
+        // Re-entering PIN
+        Cotter.strings.setPinResetReEnterPin(Strings.Title, "Masukkan PIN sekali lagi untuk konfirmasi");
+        Cotter.strings.setPinResetReEnterPin(Strings.ShowPin, "Lihat PIN");
+        Cotter.strings.setPinResetReEnterPin(Strings.HidePin, "Sembunyikan");
+        Cotter.strings.setPinResetReEnterPin(Strings.ErrorNoMatch,
+                "Kamu perlu memasukkan PIN yang sama seperti sebelumnya.");
+
+        // Success Entering PIN
+        Cotter.strings.setPinResetSuccess(Strings.Title, "PIN baru berhasil dibuat!");
+        Cotter.strings.setPinResetSuccess(Strings.Subtitle,
+                "Mulai sekarang kamu bisa login dan konfirmasi transaksi meggunakan PIN baru");
+        Cotter.strings.setPinResetSuccess(Strings.ButtonText, "Selesai");
+
+
         // Setting colors
         Cotter.colors.setColorPrimary("#5E9051");
         Cotter.colors.setColorAccent("#53228B");
         Cotter.colors.setColorDanger("#B00020");
+
+
+        // Allow back button on pin enrollment
+        Cotter.setAllowClosePinEnrollment(false);
 
         // setting text views
         res = findViewById(R.id.result);
@@ -159,6 +206,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openPinVerification(View view) {
+        // set user for reset pin
+        Cotter.user.setUserInformation("Name", "hello@gmail.com", "EMAIL");
         Cotter.PinVerification.startFlow(view, Dashboard.class, "LOGIN");
     }
 
