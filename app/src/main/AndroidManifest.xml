@@ -13,24 +13,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
-        <activity android:name=".Dashboard"> </activity>
+        <activity android:name=".TrustedDevice"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Dashboard"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-
-        <!--    Register URL Scheme for IdentityRequest redirect url    -->
-        <activity android:name="com.cotter.app.RedirectUriReceiverActivity" android:exported="true">
+        </activity> <!-- Register URL Scheme for IdentityRequest redirect url -->
+        <activity
+            android:name="com.cotter.app.RedirectUriReceiverActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="com.example.cotterexample" android:host="auth_callback"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Add this for: com.example.cotterexample://auth_callback -->
+                <data
+                    android:host="auth_callback"
+                    android:scheme="com.example.cotterexample" />
             </intent-filter>
         </activity>
     </application>
