@@ -14,6 +14,10 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+//        Cotter.MAIN_SERVER_URL = "http://10.0.2.2:1234/api/v0";
+//        Cotter.init(this, getString(R.string.api_key_id_test));
+        Cotter.init(this, getString(R.string.api_key_id));
     }
 
     public void loginEmail(View view) {
