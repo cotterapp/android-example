@@ -43,8 +43,9 @@ dependencies {
 //    implementation 'androidx.biometric:biometric:1.0.1'
 //    implementation 'com.android.support:gridlayout-v7:28.0.0'
 //    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:1.0.0'
-//
+//    implementation 'com.google.android.gms:play-services-vision:20.1.0'
+////
 //    implementation project(':Cotter')
 
-    implementation 'com.github.cotterapp:android-sdk:0.3.2'
+    implementation 'com.github.cotterapp:android-sdk:0.4.0'
 }

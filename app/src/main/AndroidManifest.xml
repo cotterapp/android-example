@@ -13,16 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TrustedDevice"></activity>
+        <activity android:name=".SignInWithDevice"></activity>
+        <activity android:name=".TrustedDevice" />
         <activity android:name=".Login" />
-        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".Dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Register URL Scheme for IdentityRequest redirect url -->
+        </activity>
+
+        <!-- ADD THIS LINE HERE -->
+        <!-- Register URL Scheme for IdentityRequest redirect url -->
         <activity
             android:name="com.cotter.app.RedirectUriReceiverActivity"
             android:exported="true">
@@ -38,6 +42,8 @@
                     android:scheme="com.example.cotterexample" />
             </intent-filter>
         </activity>
+        <!-- UNTIL HERE -->
+
     </application>
 
 </manifest>

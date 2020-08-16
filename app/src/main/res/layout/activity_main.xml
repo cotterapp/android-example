@@ -159,7 +159,16 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:onClick="goToTrustedDevice"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Sign In With Device (new Version)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="goToSignInWithDevice"/>
     </LinearLayout>
 
-
+    <include layout="@layout/loading_overlay" />
 </androidx.constraintlayout.widget.ConstraintLayout>
